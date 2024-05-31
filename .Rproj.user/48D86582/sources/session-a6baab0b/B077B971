@@ -1,0 +1,26 @@
+{
+    "id": "B077B971",
+    "path": "~/Learning/R/khan_academy_stats_probability/exploring_bivariate_data/fitting_line.R",
+    "project_path": "exploring_bivariate_data/fitting_line.R",
+    "type": "r_source",
+    "hash": "3944261740",
+    "contents": "",
+    "dirty": false,
+    "created": 1717154782829.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "56,20",
+        "scrollLine": "44"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1717159835,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1717159835279,
+    "read_only": false,
+    "read_only_alternatives": []
+}
