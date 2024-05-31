@@ -73,3 +73,39 @@ y_intercept <- -240000
 future_year <- 2023
 future_gdp <- slope * future_year + y_intercept
 future_gdp
+
+# create another data frame based on phone data
+# client has collected data on how long they spend on their phone
+# compared to how much battery life was remaining (in hours) throughout
+# the day
+# independent variable
+time_on_phone <- c(1, 2, 3.5, 4, 6, 7, 8, 9)
+# dependent variable
+battery_remaining <- c(8, 7, 7, 5.5, 5 , 3.5, 2.5, 2.5)
+
+# create dataframe
+df <- data.frame(time_on_phone, battery_remaining)
+# view head of the data frame
+head(df)
+# plot data and show regression equation
+ggplot(
+  data=df,
+  aes(
+    x=time_on_phone,
+      y=battery_remaining
+    )
+)+
+  geom_smooth(method = "lm")+
+  geom_point() +
+  stat_regline_equation(
+    label.x = 1,
+    label.y=12
+  )
+# line variables
+# y-intercept
+y_intercept <- 8.8
+# slope
+slope <- -0.72
+# predict the batter remaining in hours 
+time_spent <- 4
+battery_remaining_predict <- slope*time_spent + y_intercept
